@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.TechnologicalObjects.TechnologicalInstanceDB ID="0">
+    <AttributeList>
+      <HeaderAuthor>SIMATIC</HeaderAuthor>
+      <HeaderFamily>BasicMC</HeaderFamily>
+      <HeaderName>TO_PosAx</HeaderName>
+      <HeaderVersion>8.0</HeaderVersion>
+      <InstanceOfName>TO_PositioningAxis</InstanceOfName>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Base">
+            <Sections Datatype="TO_SpeedAxis" Version="6.0">
+              <Section Name="Base">
+                <Sections Datatype="TO_Axis" Version="5.0">
+                  <Section Name="Base">
+                    <Sections Datatype="TO_AnyMotionObject" Version="5.0">
+                      <Section Name="Input" />
+                      <Section Name="Output" />
+                      <Section Name="InOut" />
+                      <Section Name="Static">
+                        <Member Name="Header" Datatype="TO_Struct_Header" Version="5.0">
+                          <Sections>
+                            <Section Name="None">
+                              <Member Name="VersionMaj" Datatype="Int">
+                                <StartValue>8</StartValue>
+                              </Member>
+                              <Member Name="VersionMin" Datatype="Int">
+                                <StartValue>0</StartValue>
+                              </Member>
+                            </Section>
+                          </Sections>
+                        </Member>
+                      </Section>
+                    </Sections>
+                  </Section>
+                  <Section Name="Input" />
+                  <Section Name="Output" />
+                  <Section Name="InOut" />
+                  <Section Name="Static" />
+                </Sections>
+              </Section>
+              <Section Name="Input" />
+              <Section Name="Output" />
+              <Section Name="InOut" />
+              <Section Name="Static" />
+            </Sections>
+          </Section>
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Static">
+            <Member Name="Position" Datatype="Real">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Velocity" Datatype="Real">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="ActualPosition" Datatype="Real">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="ActualVelocity" Datatype="Real">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Actor" Datatype="TO_Struct_Actor" Version="7.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Sections>
+                <Section Name="None">
+                  <Member Name="Interface" Datatype="TO_Struct_ActorInterface" Version="5.0">
+                    <Sections>
+                      <Section Name="None">
+                        <Member Name="PTO" Datatype="DWord">
+                          <StartValue>16#88E1_0109</StartValue>
+                        </Member>
+                      </Section>
+                    </Sections>
+                  </Member>
+                </Section>
+              </Sections>
+            </Member>
+            <Member Name="Sensor" Datatype="Array[1..1] of TO_Struct_Sensor" Version="7.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Units" Datatype="TO_Struct_Units" Version="7.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Mechanics" Datatype="TO_Struct_Mechanics" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Sections>
+                <Section Name="None">
+                  <Member Name="LeadScrew" Datatype="Real">
+                    <StartValue>46.967</StartValue>
+                  </Member>
+                </Section>
+              </Sections>
+            </Member>
+            <Member Name="DynamicLimits" Datatype="TO_Struct_DynamicLimits" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Sections>
+                <Section Name="None">
+                  <Member Name="MaxVelocity" Datatype="Real">
+                    <StartValue>4696.699</StartValue>
+                  </Member>
+                  <Member Name="MinVelocity" Datatype="Real">
+                    <StartValue>46.967</StartValue>
+                  </Member>
+                </Section>
+              </Sections>
+            </Member>
+            <Member Name="DynamicDefaults" Datatype="TO_Struct_DynamicDefaults" Version="4.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Sections>
+                <Section Name="None">
+                  <Member Name="Acceleration" Datatype="Real">
+                    <StartValue>929.9465</StartValue>
+                  </Member>
+                  <Member Name="Deceleration" Datatype="Real">
+                    <StartValue>929.9465</StartValue>
+                  </Member>
+                  <Member Name="EmergencyDeceleration" Datatype="Real">
+                    <StartValue>2324.866</StartValue>
+                  </Member>
+                </Section>
+              </Sections>
+            </Member>
+            <Member Name="Modulo" Datatype="TO_Struct_Modulo" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PositionLimits_SW" Datatype="TO_Struct_PositionLimitsSW" Version="4.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PositionLimits_HW" Datatype="TO_Struct_PositionLimitsHW" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Homing" Datatype="TO_Struct_Homing" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PositionControl" Datatype="TO_Struct_PositionControl" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="FollowingError" Datatype="TO_Struct_FollowingError" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PositioningMonitoring" Datatype="TO_Struct_PositioningMonitoring" Version="6.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StandstillSignal" Datatype="TO_Struct_StandstillSignal" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Simulation" Datatype="TO_Struct_Simulation" Version="6.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StatusPositioning" Datatype="TO_Struct_StatusPositioning" Version="5.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StatusDrive" Datatype="TO_Struct_StatusDrive" Version="6.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StatusSensor" Datatype="Array[1..1] of TO_Struct_StatusSensor" Version="6.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StatusBits" Datatype="TO_Struct_StatusBits" Version="6.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="ErrorBits" Datatype="TO_Struct_ErrorBits" Version="6.0">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="ControlPanel" Datatype="TO_Struct_ControlPanel" Version="4.0" Accessibility="Internal">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Internal" Datatype="Array[1..4] of TO_Struct_Internal" Version="4.0" Accessibility="Internal">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>bang tai</Name>
+      <Namespace />
+      <Number>1</Number>
+      <OfSystemLibElement>TO_PositioningAxis</OfSystemLibElement>
+      <OfSystemLibVersion>8.0</OfSystemLibVersion>
+      <ParameterData>
+        <Parameters>
+          <Parameter Name="_Actor.Interface.PTO" Value="0" />
+        </Parameters>
+      </ParameterData>
+      <ProgrammingLanguage>Motion_DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.TechnologicalObjects.TechnologicalInstanceDB>
+</Document>
